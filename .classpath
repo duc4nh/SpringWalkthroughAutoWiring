@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-SpringCore/spring-expression-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

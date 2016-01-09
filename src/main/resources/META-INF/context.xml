@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Turn on Spring annottions -->
+	<context:annotation-config />
+
+	<bean id="readUserCmd" class="com.fdmgroup.springwalkthroughautowiring.ReadUserCmd" />
+	<bean id="writeUserCmd" class="com.fdmgroup.springwalkthroughautowiring.WriteUserCmd" />
+
+	<bean id="registrationController"
+		class="com.fdmgroup.springwalkthroughautowiring.RegistrationController"
+		autowire="constructor" />
+
+	<bean id="userValidator" class="com.fdmgroup.springwalkthroughautowiring.UserValidator"
+		init-method="checkSetup" autowire="byName" />
+
+	<bean id="connectionFactory1"
+		class="com.fdmgroup.springwalkthroughautowiring.ConnectionFactory" />
+
+	<bean id="connectionFactory2"
+		class="com.fdmgroup.springwalkthroughautowiring.ConnectionFactory" />
+
+	<bean id="connectionPool" class="com.fdmgroup.springwalkthroughautowiring.ConnectionPool"
+		init-method="checkSetup">
+		<property name="url" value="oracle.fdmgroup.com" />
+		<property name="username" value="duc" />
+		<property name="password" value="secret" />
+		<property name="port" value="1234" />
+	</bean>
+
+	<bean id="allProducts" class="java.util.ArrayList" />
+	<bean id="catalogue" class="com.fdmgroup.springwalkthroughautowiring.Catalogue" />
+
+</beans>
